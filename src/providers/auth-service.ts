@@ -3,11 +3,11 @@ import { Http, Headers } from '@angular/http';
 import 'rxjs/add/operator/map';
 import * as jwt_decode from "jwt-decode";
 
-//let apiUrl = 'http://localhost:3000/users/'
+let apiUrl = 'http://3ab6731a.ngrok.io/users/'
 
-let apiUrl = 'http://3a727c9f.ngrok.io/users/';
+//let apiUrl = 'http://ef74a3c3.ngrok.io/users/';
 
-
+ 
 @Injectable()
 export class AuthService {
 
