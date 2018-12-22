@@ -21,11 +21,11 @@ import { LoginPage } from "../login/login";
 })
 export class RegisterPage {
   userData = {
-    username: "",
+    userName: "",
     password: "",
     email: "",
-    firstname: "",
-    lastname: ""
+    firstName: "",
+    lastName: ""
   };
   resposeData: any;
   constructor(
@@ -41,23 +41,23 @@ export class RegisterPage {
 
   register() {
     if (
-      this.userData.username &&
+      this.userData.userName &&
       this.userData.password &&
       this.userData.email &&
-      this.userData.firstname &&
-      this.userData.lastname
+      this.userData.firstName &&
+      this.userData.lastName
     ) {
-      this.authService.postData(this.userData, "signup").then(
+      this.authService.postData(this.userData, "users").then(
         result => {
           this.resposeData = result;
           console.log(result);
-          if (this.resposeData.success) {
+          if (this.resposeData.id) {
             console.log(this.resposeData);
             localStorage.setItem("userData", JSON.stringify(this.resposeData));
             this.presentToast("Successfully registered");
             this.navCtrl.push(LoginPage);
-          } else if (this.resposeData.err.name) {
-            this.presentToast(this.resposeData.err.message);
+          } else {
+            this.presentToast(this.resposeData);
           }
         },
         err => {

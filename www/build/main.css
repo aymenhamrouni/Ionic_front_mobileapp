@@ -33627,6 +33627,11 @@ page-welcome #welcome .btn {
   border: 1px;
 }
 
+page-welcome #welcome #lab {
+  margin-left: 0.5%;
+  zoom: 1.2;
+}
+
 page-welcome div.centre {
   position: absolute;
   left: 20%;

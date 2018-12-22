@@ -1,6 +1,9 @@
-import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Component, ViewChild, ElementRef } from "@angular/core";
+import { IonicPage, NavController, NavParams } from "ionic-angular";
+import Highcharts from "highcharts";
+import More from "highcharts/highcharts-more";
 
+More(Highcharts);
 /**
  * Generated class for the Home1Page page.
  *
@@ -10,16 +13,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-home1',
-  templateUrl: 'home1.html',
+  selector: "page-home1",
+  templateUrl: "home1.html"
 })
-export class Home1Page {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
-
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad Home1Page');
-  }
-
-}
+export class Home1Page {}

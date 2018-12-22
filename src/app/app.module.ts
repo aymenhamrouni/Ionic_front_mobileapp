@@ -3,9 +3,9 @@ import { ErrorHandler, NgModule } from "@angular/core";
 import { IonicApp, IonicErrorHandler, IonicModule } from "ionic-angular";
 import { SplashScreen } from "@ionic-native/splash-screen";
 import { StatusBar } from "@ionic-native/status-bar";
-import { FileTransfer, FileTransferObject } from '@ionic-native/file-transfer';
-import { File } from '@ionic-native/file';
-import { Camera } from '@ionic-native/camera';
+import { FileTransfer, FileTransferObject } from "@ionic-native/file-transfer";
+import { File } from "@ionic-native/file";
+import { Camera } from "@ionic-native/camera";
 import { MyApp } from "./app.component";
 import { HomePage } from "../pages/home/home";
 import { LoginPage } from "../pages/login/login";
@@ -18,9 +18,11 @@ import { HttpModule } from "@angular/http";
 import { HttpClientModule } from "@angular/common/http";
 import { AuthService } from "../providers/auth-service";
 import { WelcomePage } from "../pages/welcome/welcome";
-import { SplitPane } from '../providers/split-pane';
-import { Common } from '../providers/common';
+import { SplitPane } from "../providers/split-pane";
+import { Common } from "../providers/common";
+import { SocketIoModule, SocketIoConfig } from "ng-socket-io";
 
+const config: SocketIoConfig = { url: "http://localhost:3000", options: {} };
 @NgModule({
   declarations: [
     MyApp,
@@ -36,7 +38,8 @@ import { Common } from '../providers/common';
     BrowserModule,
     IonicModule.forRoot(MyApp),
     HttpClientModule,
-    HttpModule
+    HttpModule,
+    SocketIoModule.forRoot(config)
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -53,8 +56,11 @@ import { Common } from '../providers/common';
     StatusBar,
     AuthService,
     RegisterService,
-    SplashScreen,SplitPane,Common,SplashScreen,
-    { provide: ErrorHandler,useClass: IonicErrorHandler },
+    SplashScreen,
+    SplitPane,
+    Common,
+    SplashScreen,
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     FileTransfer,
     FileTransferObject,
     File,

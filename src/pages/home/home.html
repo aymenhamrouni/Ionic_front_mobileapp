@@ -1,70 +1,66 @@
 <ion-header>
+  <ion-navbar hideBackButton="true">
+    <!-- If you don't need back here -->
 
-<ion-navbar hideBackButton="true"> <!-- If you don't need back here -->
- 
+    <ion-title> Smart Home Security</ion-title>
 
+    <ion-buttons end>
+      <button ion-button icon-only (click)="action1()">
+        <ion-icon name="create"></ion-icon>
+      </button>
 
-  <ion-title>
-    Smart Home Security</ion-title>
-
-  <ion-buttons end >
-  
-
-
-  
-        <button ion-button icon-only (click)="action1()">
-            <ion-icon name="create"></ion-icon>
-        </button>
-
-        <button ion-button icon-only (click)="action2()">
-            <ion-icon name="trash"></ion-icon>
-        </button>
+      <button ion-button icon-only (click)="action2()">
+        <ion-icon name="trash"></ion-icon>
+      </button>
     </ion-buttons>
-</ion-navbar>
+  </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  <!-- <h2>Welcome to {{userDetails.id}}</h2>
-  <ion-item id="udpateBox">
-    <textarea #updatebox [(ngModel)]="userPostData.feed" autofocus></textarea>
-    <ion-row>
-      <button ion-button color="energy" (click)="feedUpdate()">Update</button>
-    </ion-row>
-  </ion-item>
-
-  <ion-card *ngFor="let item of dataSet; let msgIndex = index">
-    <ion-item>
-      <ion-icon name="trash" item-right (click)="feedDelete(item.feed_id, msgIndex)"></ion-icon>
-      <ion-card-content>
-        <p [innerHTML]="item.feed | linky"></p>
-        <span>{{this.converTime(item.created) | amTimeAgo}}</span>
-      </ion-card-content>
+  <!--
+    <h2>Welcome to {{userDetails.id}}</h2>
+    <ion-item id="udpateBox">
+      <textarea #updatebox [(ngModel)]="userPostData.feed" autofocus></textarea>
+      <ion-row>
+        <button ion-button color="energy" (click)="feedUpdate()">Update</button>
+      </ion-row>
     </ion-item>
-  </ion-card>
 
-  <ion-card *ngIf="noRecords">
-    <ion-item>
-      No Records
-    </ion-item>
-  </ion-card>
+    <ion-card *ngFor="let item of dataSet; let msgIndex = index">
+      <ion-item>
+        <ion-icon name="trash" item-right (click)="feedDelete(item.feed_id, msgIndex)"></ion-icon>
+        <ion-card-content>
+          <p [innerHTML]="item.feed | linky"></p>
+          <span>{{this.converTime(item.created) | amTimeAgo}}</span>
+        </ion-card-content>
+      </ion-item>
+    </ion-card>
 
-  <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())" *ngIf="!noRecords">
-    <ion-infinite-scroll-content></ion-infinite-scroll-content>
-  </ion-infinite-scroll>
- -->
+    <ion-card *ngIf="noRecords">
+      <ion-item>
+        No Records
+      </ion-item>
+    </ion-card>
 
-
+    <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())" *ngIf="!noRecords">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  -->
 
   <ion-item>
-    <p>{{imageURI}}</p>
-    <button ion-button color="secondary" (click)="getImage()">Get Image</button>
+    <p>{{ imageURI }}</p>
+    <button ion-button color="secondary" (click)="recieve()">Get Image</button>
   </ion-item>
   <ion-item>
     <h4>Image Preview</h4>
-    <img src="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="300" />
+    <img
+      src="{{imageFileName}}"
+      *ngIf="imageFileName"
+      alt="Ionic File"
+      width="300"
+    />
   </ion-item>
   <ion-item>
     <button ion-button (click)="uploadFile()">Upload</button>
   </ion-item>
-
 </ion-content>
