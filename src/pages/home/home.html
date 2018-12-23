@@ -67,26 +67,44 @@
 
 <ion-content class="card-background-page">
 
-    <ion-card>
-      <img  (click)="gotohome2()" src="../../assets/imgs/cameras.png"/>
-      <div class="card-title">Surveillance Cameras</div>
-    </ion-card> 
   
-    <ion-card>
-      <img (click)="gotohome1()" src="../../assets/imgs/fire.jpg"/>
-      <div class="card-title">Fire/Toxication Sensors</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="img/card-sf.png"/>
-      <div class="card-title">San Francisco</div>
-      <div class="card-subtitle">72 Listings</div>
-    </ion-card>
-  
-    <ion-card>
-      <img src="img/card-madison.png"/>
-      <div class="card-title">Madison</div>
-      <div class="card-subtitle">28 Listings</div>
-    </ion-card>
-  
+    <div cards>
+
+        <div class="grid-full">
+          <ion-row>
+            <ion-col>
+              <ion-card>
+                <img (click)="gotohome2()" src="../../assets/imgs/cameras.png"/>
+              
+                
+      <div>Surveillance Cameras</div>
+              </ion-card>
+            </ion-col>
+    
+            <ion-col>
+                <ion-card>
+                  <img (click)="gotohome1()" src="../../assets/imgs/fire.jpg"/>
+                  <div>Fire/Toxication Sensors</div>
+                </ion-card>
+            </ion-col>
+    
+            <ion-col>
+                <ion-card>
+                  <img src="../../assets/imgs/doors.jpg"/> 
+                  <div >Doors Status</div>
+                </ion-card>
+            </ion-col>
+    
+            <ion-col>
+              <ion-card>
+                  <img src="../../assets/imgs/windows.jpg"/>
+                  <div>Windows Status</div>
+              </ion-card>
+            </ion-col>
+          </ion-row>
+        </div>
+    
+      </div>
+    
+
   </ion-content>

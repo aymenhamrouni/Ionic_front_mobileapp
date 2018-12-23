@@ -33586,13 +33586,23 @@ page-home .navbarLogo {
 page-home .card-background-page ion-card {
   position: relative;
   text-align: center;
+  top: 20px;
 }
 
 page-home .card-background-page .card-title {
   position: absolute;
   top: 80%;
-  font-size: 1.0em;
+  font-size: 0.9em;
   width: 100%;
+  font-weight: bold;
+  color: #030000;
+}
+
+page-home .card-background-page .card-title2 {
+  position: absolute;
+  top: 100%;
+  font-size: 0.9em;
+  width: 90%;
   font-weight: bold;
   color: #030000;
 }
@@ -33611,6 +33621,41 @@ page-home page-home .blue {
 
 page-home page-home #udpateBox textarea {
   width: 100%;
+}
+
+page-home [cards] .grid-full ion-col {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 100%;
+  padding: 5px 0;
+}
+
+page-home [cards] .row {
+  padding: 0;
+}
+
+page-home [cards] .col {
+  padding: 0 0;
+}
+
+page-home [cards] .card {
+  margin: 0 0 0 20px;
+  padding: 0;
+  -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+}
+
+page-home [cards] .card h1 {
+  font-weight: 400;
+  font-size: 3.5rem;
+}
+
+page-home [cards] .card p {
+  font-weight: 100;
+  font-size: 1.5rem;
 }
 
 card-background-page ion-card {

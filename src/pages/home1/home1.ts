@@ -22,7 +22,7 @@ export class Home1Page {
   ) {
     let loading = this.loadingCtrl.create({
       spinner: "ios",
-      content: "Please wait..."
+      content: "Please wait while fetching data..."
     });
     loading.present();
 
