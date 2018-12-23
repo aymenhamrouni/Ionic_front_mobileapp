@@ -33590,7 +33590,7 @@ page-home .card-background-page ion-card {
 
 page-home .card-background-page .card-title {
   position: absolute;
-  top: 70%;
+  top: 80%;
   font-size: 1.0em;
   width: 100%;
   font-weight: bold;
@@ -33600,7 +33600,7 @@ page-home .card-background-page .card-title {
 page-home .card-background-page .card-subtitle {
   font-size: 1.0em;
   position: absolute;
-  top: 80%;
+  top: 90%;
   width: 100%;
   color: black;
 }

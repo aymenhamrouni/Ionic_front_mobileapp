@@ -83,8 +83,11 @@ export class HomePage {
     });
     toast.present();
   }
-  gotohome1() {
+  gotohome2() {
     this.navCtrl.push(Home2Page);
+  }
+  gotohome1() {
+    this.navCtrl.push(Home1Page);
   }
   register() {
     this.navCtrl.push(RegisterPage);
