@@ -84,5 +84,9 @@
     <plugin name="cordova-plugin-camera" spec="4.0.3" />
     <plugin name="cordova-plugin-file" spec="6.0.1" />
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
+<<<<<<< HEAD
+=======
+    <plugin name="cordova-plugin-streaming-media" spec="https://github.com/nchutchind/cordova-plugin-streaming-media" />
+>>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
     <engine name="android" spec="7.1.4" />
 </widget>

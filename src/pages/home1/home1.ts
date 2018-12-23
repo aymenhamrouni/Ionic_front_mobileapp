@@ -1,11 +1,12 @@
 import { Component, ViewChild, ElementRef } from "@angular/core";
-import { NavController, LoadingController } from "ionic-angular";
+import { NavController, LoadingController,IonicPage, NavParams  } from "ionic-angular";
 import Highcharts, { isObject } from "highcharts";
 import More from "highcharts/highcharts-more";
 import * as io from "socket.io-client";
 import { HomePage } from "../home/home";
+import { StreamingMedia, StreamingVideoOptions, StreamingAudioOptions } from '@ionic-native/streaming-media';
 More(Highcharts);
-
+@IonicPage()
 @Component({
   selector: "page-home1",
   templateUrl: "home1.html"

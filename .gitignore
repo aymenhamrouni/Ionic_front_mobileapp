@@ -11,7 +11,11 @@ log.txt
 *.sublime-workspace
 .vscode/
 npm-debug.log*
+<<<<<<< HEAD
 
+=======
+server/
+>>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
 .idea/
 .ionic/
 .sourcemaps/

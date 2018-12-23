@@ -3,7 +3,11 @@ import { Http, Headers } from "@angular/http";
 import "rxjs/add/operator/map";
 import * as jwt_decode from "jwt-decode";
 
+<<<<<<< HEAD
 let apiUrl = "http://localhost:3000/";
+=======
+let apiUrl = "http://6282e97b.ngrok.io/";
+>>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
 
 //let apiUrl = 'http://ef74a3c3.ngrok.io/users/';
 
