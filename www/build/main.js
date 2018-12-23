@@ -259,20 +259,20 @@ var Home1Page = /** @class */ (function () {
     };
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("container", { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] }),
-        __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _a || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
     ], Home1Page.prototype, "container", void 0);
     __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["ViewChild"])("container1", { read: __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] }),
-        __metadata("design:type", typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"]) === "function" && _b || Object)
+        __metadata("design:type", __WEBPACK_IMPORTED_MODULE_0__angular_core__["ElementRef"])
     ], Home1Page.prototype, "container1", void 0);
     Home1Page = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "page-home1",template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home1\home1.html"*/'<ion-header>\n\n  <ion-navbar> <ion-title>Home</ion-title> </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <h2></h2>\n\n\n\n  <div #container></div>\n\n  <div #container1></div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home1\home1.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
     ], Home1Page);
     return Home1Page;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=home1.js.map
@@ -315,10 +315,9 @@ var Home2Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-home2',template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home2\home2.html"*/'\n\n\n\n<ion-content padding>\n\n  <h1>This is Caffe</h1>\n\n  </ion-content>\n\n  '/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home2\home2.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], Home2Page);
     return Home2Page;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home2.js.map
@@ -361,10 +360,9 @@ var Home3Page = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-home3',template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home3\home3.html"*/'\n\n\n\n<ion-content padding>\n\n \n\n<h2>This is Gallery Page</h2>\n\n</ion-content>\n\n  '/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home3\home3.html"*/,
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], Home3Page);
     return Home3Page;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=home3.js.map
@@ -416,10 +414,9 @@ var LoginPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: 'page-login',template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\login\login.html"*/'  <ion-tabs>\n\n    <ion-tab [root]="tab1Root" tabTitle="Music" tabIcon="musical-note" >\n\n    </ion-tab>\n\n    <ion-tab [root]="tab2Root" tabTitle="Cafe" tabIcon="cafe" ></ion-tab>\n\n    <ion-tab [root]="tab3Root" tabTitle="Gallery" tabIcon="image"></ion-tab>\n\n  </ion-tabs>'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\login\login.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
     ], LoginPage);
     return LoginPage;
-    var _a, _b;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -503,10 +500,13 @@ var WelcomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "page-welcome",template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\welcome\welcome.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-title\n\n      ><div\n\n        align="center"\n\n        style="font-family: Georgia, \'Times New Roman\', Times, serif"\n\n      >\n\n        Smart Home Security\n\n      </div></ion-title\n\n    >\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<br />\n\n\n\n<ion-content padding id="welcome">\n\n  <div align="center">\n\n    <img src="assets/imgs/logo-smart-security.png" class="logo" />\n\n    <h2 style="font-family:fantasy">Keepin\' Your Home Safe</h2>\n\n  </div>\n\n  <br />\n\n\n\n  <ion-list>\n\n    <ion-list>\n\n      <ion-item>\n\n        <ion-label stacked><ion-icon name="mail"></ion-icon> Email</ion-label>\n\n        <ion-input\n\n          [(ngModel)]="userData.email"\n\n          name="email"\n\n          type="text"\n\n          #email="ngModel"\n\n          spellcheck="false"\n\n          autocapitalize="off"\n\n          required\n\n        ></ion-input>\n\n      </ion-item>\n\n      <p\n\n        ion-text\n\n        [hidden]="email.valid || submitted == false"\n\n        color="danger"\n\n        padding-left\n\n      >\n\n        Email is required\n\n      </p>\n\n      <ion-item>\n\n        <ion-label stacked\n\n          ><ion-icon name="lock"></ion-icon> Password</ion-label\n\n        >\n\n        <ion-input\n\n          [(ngModel)]="userData.password"\n\n          name="password"\n\n          type="password"\n\n          #password="ngModel"\n\n          required\n\n        ></ion-input>\n\n      </ion-item>\n\n      <p\n\n        ion-text\n\n        [hidden]="password.valid || submitted == false"\n\n        color="danger"\n\n        padding-left\n\n      >\n\n        Password is required\n\n      </p>\n\n    </ion-list>\n\n    <ion-item id="login-toggle1">\n\n      <ion-label> Keep me logged in </ion-label>\n\n      <ion-toggle color="dark" checked="false"></ion-toggle>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <div padding>\n\n    <!--\n\n      <button ion-button block class="marginTop" (click)="signup()">Signup</button>\n\n    -->\n\n    <button\n\n      (click)="login()"\n\n      id="login-button1"\n\n      ion-button\n\n      outline\n\n      color="dark"\n\n      block\n\n      style="color:#252A31;"\n\n    >\n\n      <ion-icon name="arrow-forward"></ion-icon>\n\n      Log in\n\n    </button>\n\n    <br />\n\n\n\n    <ion-buttons end>\n\n      <button color="dark" (click)="register()" end>Register ?</button>\n\n    </ion-buttons>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\welcome\welcome.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_4__providers_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__providers_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */]) === "function" && _e || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_4__providers_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */]])
     ], WelcomePage);
     return WelcomePage;
-    var _a, _b, _c, _d, _e;
 }());
 
 //# sourceMappingURL=welcome.js.map
@@ -547,11 +547,11 @@ var map = {
 		2
 	],
 	"../pages/register/register.module": [
-		467,
+		468,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		468,
+		467,
 		0
 	]
 };
@@ -698,10 +698,15 @@ var HomePage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "page-home",template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home\home.html"*/'<ion-header>\n\n  <ion-navbar hideBackButton="true">\n\n    <!-- If you don\'t need back here -->\n\n\n\n    <ion-title> Smart Home Security</ion-title>\n\n\n\n    <ion-buttons end>\n\n      <button ion-button icon-only (click)="action1()">\n\n        <ion-icon name="create"></ion-icon>\n\n      </button>\n\n\n\n      <button ion-button icon-only (click)="action2()">\n\n        <ion-icon name="trash"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n  <!--\n\n    <h2>Welcome to {{userDetails.id}}</h2>\n\n    <ion-item id="udpateBox">\n\n      <textarea #updatebox [(ngModel)]="userPostData.feed" autofocus></textarea>\n\n      <ion-row>\n\n        <button ion-button color="energy" (click)="feedUpdate()">Update</button>\n\n      </ion-row>\n\n    </ion-item>\n\n\n\n    <ion-card *ngFor="let item of dataSet; let msgIndex = index">\n\n      <ion-item>\n\n        <ion-icon name="trash" item-right (click)="feedDelete(item.feed_id, msgIndex)"></ion-icon>\n\n        <ion-card-content>\n\n          <p [innerHTML]="item.feed | linky"></p>\n\n          <span>{{this.converTime(item.created) | amTimeAgo}}</span>\n\n        </ion-card-content>\n\n      </ion-item>\n\n    </ion-card>\n\n\n\n    <ion-card *ngIf="noRecords">\n\n      <ion-item>\n\n        No Records\n\n      </ion-item>\n\n    </ion-card>\n\n\n\n    <ion-infinite-scroll (ionInfinite)="$event.waitFor(doInfinite())" *ngIf="!noRecords">\n\n      <ion-infinite-scroll-content></ion-infinite-scroll-content>\n\n    </ion-infinite-scroll>\n\n  -->\n\n\n\n  <ion-item>\n\n    <p>{{ imageURI }}</p>\n\n    <button ion-button color="secondary" (click)="recieve()">Get Image</button>\n\n  </ion-item>\n\n  <ion-item>\n\n    <h4>Image Preview</h4>\n\n    <img\n\n      src="{{imageFileName}}"\n\n      *ngIf="imageFileName"\n\n      alt="Ionic File"\n\n      width="300"\n\n    />\n\n  </ion-item>\n\n  <ion-item>\n\n    <button ion-button (click)="uploadFile()">Upload</button>\n\n  </ion-item>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\home\home.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__["a" /* FileTransfer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__["a" /* FileTransfer */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__["a" /* Camera */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* LoadingController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* ToastController */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* MenuController */]) === "function" && _g || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_4__ionic_native_file_transfer__["a" /* FileTransfer */],
+            __WEBPACK_IMPORTED_MODULE_5__ionic_native_camera__["a" /* Camera */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["f" /* LoadingController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["k" /* ToastController */],
+            __WEBPACK_IMPORTED_MODULE_3_ionic_angular__["g" /* MenuController */]])
     ], HomePage);
     return HomePage;
-    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=home.js.map
@@ -754,10 +759,9 @@ var SplitPane = /** @class */ (function () {
     };
     SplitPane = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]])
     ], SplitPane);
     return SplitPane;
-    var _a;
 }());
 
 //# sourceMappingURL=split-pane.js.map
@@ -859,8 +863,8 @@ var AppModule = /** @class */ (function () {
                         { loadChildren: '../pages/home2/home2.module#Home2PageModule', name: 'Home2Page', segment: 'home2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home3/home3.module#Home3PageModule', name: 'Home3Page', segment: 'home3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#RegisterPageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/welcome/welcome.module#RegisterPageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["a" /* HttpClientModule */],
@@ -969,10 +973,9 @@ var MyApp = /** @class */ (function () {
     MyApp = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\app\app.html"*/'<!--<ion-nav [root]="rootPage"></ion-nav>-->\n\n\n\n<ion-split-pane [when]="splitPane.getSplitPane()">\n\n    <!--  our side menu  -->\n\n    <ion-menu [content]="content">\n\n      <ion-header>\n\n        <ion-toolbar>\n\n          <ion-title>Menu</ion-title>\n\n        </ion-toolbar>\n\n      </ion-header>\n\n     \n\n  \n\n       <ion-content>\n\n      <ion-list>\n\n  \n\n          <button ion-button color="primary" (click)="logout()">Logout</button>\n\n      </ion-list>\n\n       </ion-content>\n\n  \n\n    </ion-menu>\n\n    \n\n    <ion-nav  [root]="rootPage" main #content swipeBackEnabled="false"></ion-nav>\n\n\n\n    <!-- the main content -->\n\n\n\n\n\n  </ion-split-pane>\n\n  \n\n'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\app\app.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__providers_split_pane__["a" /* SplitPane */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__providers_split_pane__["a" /* SplitPane */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _h || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* App */], __WEBPACK_IMPORTED_MODULE_5__providers_split_pane__["a" /* SplitPane */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* MenuController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
     ], MyApp);
     return MyApp;
-    var _a, _b, _c, _d, _e, _f, _g, _h;
 }());
 
 //# sourceMappingURL=app.component.js.map
@@ -1023,10 +1026,9 @@ var RegisterService = /** @class */ (function () {
     };
     RegisterService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
     ], RegisterService);
     return RegisterService;
-    var _a;
 }());
 
 //# sourceMappingURL=register.service.js.map
@@ -1071,10 +1073,9 @@ var Common = /** @class */ (function () {
     };
     Common = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
     ], Common);
     return Common;
-    var _a;
 }());
 
 //# sourceMappingURL=common.js.map
@@ -1154,10 +1155,9 @@ var AuthService = /** @class */ (function () {
     };
     AuthService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
     ], AuthService);
     return AuthService;
-    var _a;
 }());
 
 //# sourceMappingURL=auth-service.js.map
@@ -1249,10 +1249,12 @@ var RegisterPage = /** @class */ (function () {
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
             selector: "page-register",template:/*ion-inline-start:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\register\register.html"*/'<ion-header>\n\n  <ion-navbar>\n\n    <ion-buttons start>\n\n      <button ion-button icon-only (click)="action1()">\n\n        <ion-icon name="create"></ion-icon>\n\n      </button>\n\n\n\n      <button ion-button icon-only (click)="action2()">\n\n        <ion-icon name="trash"></ion-icon>\n\n      </button>\n\n    </ion-buttons>\n\n    <ion-title>Register</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <ion-item>\n\n      <ion-label stacked>Username</ion-label>\n\n      <ion-input type="text" [(ngModel)]="userData.userName"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item class="item-inner">\n\n      <ion-label stacked>Firstname</ion-label>\n\n      <ion-input type="text" [(ngModel)]="userData.firstName"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label stacked>Lastname</ion-label>\n\n      <ion-input type="text" [(ngModel)]="userData.lastName"></ion-input>\n\n    </ion-item>\n\n\n\n    <ion-item>\n\n      <ion-label stacked>Email</ion-label>\n\n      <ion-input type="text" [(ngModel)]="userData.email"></ion-input>\n\n    </ion-item>\n\n    <ion-item>\n\n      <ion-label stacked>Password</ion-label>\n\n      <ion-input type="password" [(ngModel)]="userData.password"></ion-input>\n\n    </ion-item>\n\n  </ion-list>\n\n\n\n  <div padding>\n\n    <button ion-button color="dark" block (click)="register()">Register</button>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\projet aim\front\Ionic_front_mobileapp\src\pages\register\register.html"*/
         }),
-        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]) === "function" && _d || Object])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */],
+            __WEBPACK_IMPORTED_MODULE_2__providers_auth_service__["a" /* AuthService */],
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
     ], RegisterPage);
     return RegisterPage;
-    var _a, _b, _c, _d;
 }());
 
 //# sourceMappingURL=register.js.map
