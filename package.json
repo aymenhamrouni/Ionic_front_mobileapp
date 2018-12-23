@@ -66,19 +66,11 @@
       "cordova-plugin-ionic-keyboard": {},
       "cordova-plugin-camera": {},
       "cordova-plugin-file": {},
-<<<<<<< HEAD
-      "cordova-plugin-file-transfer": {}
-=======
       "cordova-plugin-file-transfer": {},
       "cordova-plugin-streaming-media": {}
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
     },
     "platforms": [
       "android"
     ]
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef

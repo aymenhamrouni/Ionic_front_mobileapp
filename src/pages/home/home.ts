@@ -17,6 +17,7 @@ import {
 import { Camera, CameraOptions } from "@ionic-native/camera";
 import * as io from "socket.io-client";
 import { Home1Page } from "../home1/home1";
+import { Home2Page } from "../home2/home2";
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
@@ -83,7 +84,7 @@ export class HomePage {
     toast.present();
   }
   gotohome1() {
-    this.navCtrl.push(Home1Page);
+    this.navCtrl.push(Home2Page);
   }
   register() {
     this.navCtrl.push(RegisterPage);
