@@ -21,7 +21,6 @@ import { WelcomePage } from "../pages/welcome/welcome";
 import { SplitPane } from "../providers/split-pane";
 import { Common } from "../providers/common";
 import { SocketIoModule, SocketIoConfig } from "ng-socket-io";
-
 const config: SocketIoConfig = { url: "http://localhost:3000", options: {} };
 @NgModule({
   declarations: [

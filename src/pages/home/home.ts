@@ -36,6 +36,7 @@ export class HomePage {
     lastCreated: ""
   };
   socket: any;
+  public test: number;
   constructor(
     public navCtrl: NavController,
     public authService: AuthService,
