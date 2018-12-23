@@ -4,7 +4,7 @@ import Highcharts, { isObject } from "highcharts";
 import More from "highcharts/highcharts-more";
 import * as io from "socket.io-client";
 import { HomePage } from "../home/home";
-import { StreamingMedia, StreamingVideoOptions, StreamingAudioOptions } from '@ionic-native/streaming-media';
+
 More(Highcharts);
 @IonicPage()
 @Component({

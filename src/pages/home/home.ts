@@ -36,10 +36,6 @@ export class HomePage {
     lastCreated: ""
   };
   socket: any;
-<<<<<<< HEAD
-  public test: number;
-=======
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
   constructor(
     public navCtrl: NavController,
     public authService: AuthService,
@@ -86,12 +82,9 @@ export class HomePage {
     });
     toast.present();
   }
-<<<<<<< HEAD
-=======
   gotohome1() {
     this.navCtrl.push(Home1Page);
   }
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
   register() {
     this.navCtrl.push(RegisterPage);
   }

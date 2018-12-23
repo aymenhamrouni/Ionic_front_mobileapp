@@ -21,11 +21,8 @@ import { WelcomePage } from "../pages/welcome/welcome";
 import { SplitPane } from "../providers/split-pane";
 import { Common } from "../providers/common";
 import { SocketIoModule, SocketIoConfig } from "ng-socket-io";
-<<<<<<< HEAD
-=======
 import { StreamingMedia } from '@ionic-native/streaming-media';
 
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
 const config: SocketIoConfig = { url: "http://localhost:3000", options: {} };
 @NgModule({
   declarations: [
@@ -68,12 +65,8 @@ const config: SocketIoConfig = { url: "http://localhost:3000", options: {} };
     FileTransfer,
     FileTransferObject,
     File,
-<<<<<<< HEAD
-    Camera
-=======
     Camera,
     StreamingMedia
->>>>>>> 0dc553e2f6f4dfdeb21e927289c4d01930068eef
   ]
 })
 export class AppModule {}
