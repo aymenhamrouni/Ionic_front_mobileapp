@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons start>
+      <button ion-button icon-only (click)="action1()">
+        <ion-icon name="create"></ion-icon>
+      </button>
+
+      <button ion-button icon-only (click)="action2()">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title>Register</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item>
+      <ion-label stacked>Username</ion-label>
+      <ion-input type="text" [(ngModel)]="userData.userName"></ion-input>
+    </ion-item>
+
+    <ion-item class="item-inner">
+      <ion-label stacked>Firstname</ion-label>
+      <ion-input type="text" [(ngModel)]="userData.firstName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Lastname</ion-label>
+      <ion-input type="text" [(ngModel)]="userData.lastName"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label stacked>Email</ion-label>
+      <ion-input type="text" [(ngModel)]="userData.email"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label stacked>Password</ion-label>
+      <ion-input type="password" [(ngModel)]="userData.password"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <button ion-button color="dark" block (click)="register()">Register</button>
+  </div>
+</ion-content>

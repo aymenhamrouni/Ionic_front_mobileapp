@@ -1,0 +1,52 @@
+page-home {
+    .title.title-md {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+       
+    .navbarLogo{
+        height: 40px;
+        float:left;
+        margin-left:10px;
+    }
+    .card-background-page {
+
+        ion-card {
+          position: relative;
+          text-align: center;
+        }
+      
+    .card-title {
+          position: absolute;
+          top: 70%;
+          font-size: 1.0em;
+          width: 100%;
+          font-weight: bold;
+          color: rgb(3, 0, 0);
+        }
+      
+    .card-subtitle {
+          font-size: 1.0em;
+          position: absolute;
+          top: 80%;
+          width: 100%;
+          color: rgb(0, 0, 0);
+        }
+      
+      }
+    page-home {
+    .blue{
+        color:#006699;
+    }
+    #udpateBox{
+        textarea{
+            width:100%;
+        }
+    }
+    }
+
+}
