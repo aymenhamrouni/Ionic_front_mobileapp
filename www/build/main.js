@@ -215,23 +215,23 @@ var map = {
 		5
 	],
 	"../pages/home2/home2.module": [
-		466,
+		468,
 		4
 	],
 	"../pages/home3/home3.module": [
-		467,
+		466,
 		3
 	],
 	"../pages/login/login.module": [
-		468,
+		467,
 		2
 	],
 	"../pages/register/register.module": [
-		469,
+		470,
 		1
 	],
 	"../pages/welcome/welcome.module": [
-		470,
+		469,
 		0
 	]
 };
@@ -574,11 +574,11 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["d" /* IonicModule */].forRoot(__WEBPACK_IMPORTED_MODULE_8__app_component__["a" /* MyApp */], {}, {
                     links: [
                         { loadChildren: '../pages/home1/home1.module#Home1PageModule', name: 'Home1Page', segment: 'home1', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home2/home2.module#Home2PageModule', name: 'Home2Page', segment: 'home2', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home3/home3.module#Home3PageModule', name: 'Home3Page', segment: 'home3', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/welcome/welcome.module#RegisterPageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/home2/home2.module#Home2PageModule', name: 'Home2Page', segment: 'home2', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/welcome/welcome.module#RegisterPageModule', name: 'WelcomePage', segment: 'welcome', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_17__angular_common_http__["a" /* HttpClientModule */],
@@ -733,7 +733,7 @@ var RegisterService = /** @class */ (function () {
         headers.append("Content-Type", "application/json");
         console.log(user);
         return this.http
-            .post("https://localhost:3433/users/signup", user, { headers: headers })
+            .post("http://localhost:3433/users/signup", user, { headers: headers })
             .pipe(Object(__WEBPACK_IMPORTED_MODULE_2_rxjs_operators__["map"])(function (response) { return response.json(); }))
             .subscribe(function (data) {
             console.log(data);
@@ -741,9 +741,10 @@ var RegisterService = /** @class */ (function () {
     };
     RegisterService = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Injectable"])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
     ], RegisterService);
     return RegisterService;
+    var _a;
 }());
 
 //# sourceMappingURL=register.service.js.map

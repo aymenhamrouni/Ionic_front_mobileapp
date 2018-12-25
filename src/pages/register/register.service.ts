@@ -19,7 +19,7 @@ export class RegisterService {
 
     console.log(user);
     return this.http
-      .post("https://localhost:3433/users/signup", user, { headers: headers })
+      .post("http://localhost:3433/users/signup", user, { headers: headers })
       .pipe(map(response => response.json()))
       .subscribe(data => {
         console.log(data);
