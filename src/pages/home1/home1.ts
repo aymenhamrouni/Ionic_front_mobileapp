@@ -28,7 +28,6 @@ export class Home1Page {
     private socket: Socket,
     public navParams: NavParams
   ) {
-<<<<<<< HEAD
     this.carbMono = navParams.get("mono");
     this.carbDuo = navParams.get("duo");
     this.socket.connect();
@@ -38,13 +37,6 @@ export class Home1Page {
         content: "Please wait..."
       });
       loading.present();
-=======
-    let loading = this.loadingCtrl.create({
-      spinner: "ios",
-      content: "Please wait while fetching data..."
-    });
-    loading.present();
->>>>>>> 85aeb8ecc1f65ac218ef1fed27022f0da824fa22
 
       setTimeout(() => {
         loading.dismiss();
