@@ -18,6 +18,8 @@ import { Camera, CameraOptions } from "@ionic-native/camera";
 import * as io from "socket.io-client";
 import { Home1Page } from "../home1/home1";
 import { Home2Page } from "../home2/home2";
+import { Socket } from "ng-socket-io";
+
 @Component({
   selector: "page-home",
   templateUrl: "home.html"
@@ -29,6 +31,12 @@ export class HomePage {
   public resposeData: any;
   public dataSet: any;
   public noRecords: boolean;
+  Home = {
+    WindowsSensors: ""
+  };
+  loading: any;
+  Mono: number = 0;
+  Duo: number = 0;
   userPostData = {
     user_id: "",
     token: "",
@@ -36,7 +44,6 @@ export class HomePage {
     feed_id: "",
     lastCreated: ""
   };
-  socket: any;
   constructor(
     public navCtrl: NavController,
     public authService: AuthService,
@@ -44,11 +51,21 @@ export class HomePage {
     private camera: Camera,
     public loadingCtrl: LoadingController,
     public toastCtrl: ToastController,
-    public menu: MenuController
+    public menu: MenuController,
+    private socket: Socket
   ) {
+    this.loading = this.loadingCtrl.create({
+      spinner: "ios",
+      content: "Please wait..."
+    });
+    this.socket.connect();
+
     this.menu.enable(true);
-    this.socket = io("http://localhost:3000");
+
     this.socket.on("home_1", msg => {
+      this.Home.WindowsSensors = JSON.parse(msg.payload).WindowsSensors;
+      this.Mono = JSON.parse(msg.payload).CarbonMonoxide;
+      this.Duo = JSON.parse(msg.payload).CarbonDioxide;
       console.log(msg);
     });
     const data = JSON.parse(localStorage.getItem("userData"));
@@ -87,7 +104,7 @@ export class HomePage {
     this.navCtrl.push(Home2Page);
   }
   gotohome1() {
-    this.navCtrl.push(Home1Page);
+    this.navCtrl.push(Home1Page, { mono: this.Mono, duo: this.Duo });
   }
   register() {
     this.navCtrl.push(RegisterPage);
@@ -129,8 +146,16 @@ export class HomePage {
     /*     const root = this.app.getRootNav();
     root.popToRoot(); */
   }
+
   action1() {
-    this.navCtrl.push(Home1Page);
+    //this.navCtrl.push(Home1Page);
+    if (this.Home.WindowsSensors == "1") {
+      this.Home.WindowsSensors = "0";
+    } else {
+      this.Home.WindowsSensors = "1";
+    }
+    this.socket.connect();
+    this.socket.emit("home", this.Home.WindowsSensors);
   }
   logout() {
     //Api Token Logout

@@ -45,6 +45,7 @@
     "jwt-decode": "^2.2.0",
     "ng-canvas-gauges": "^2.0.3",
     "ng-socket-io": "^0.2.4",
+    "ngx-mqtt": "^6.8.2",
     "rxjs": "^5.5.11",
     "sw-toolbox": "3.6.0",
     "zone.js": "0.8.26"

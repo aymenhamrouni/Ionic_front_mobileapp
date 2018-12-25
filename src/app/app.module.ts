@@ -21,9 +21,10 @@ import { WelcomePage } from "../pages/welcome/welcome";
 import { SplitPane } from "../providers/split-pane";
 import { Common } from "../providers/common";
 import { SocketIoModule, SocketIoConfig } from "ng-socket-io";
-import { StreamingMedia } from '@ionic-native/streaming-media';
+import { StreamingMedia } from "@ionic-native/streaming-media";
 
 const config: SocketIoConfig = { url: "http://localhost:3000", options: {} };
+
 @NgModule({
   declarations: [
     MyApp,

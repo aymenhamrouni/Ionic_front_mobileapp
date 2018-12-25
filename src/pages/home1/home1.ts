@@ -1,9 +1,14 @@
 import { Component, ViewChild, ElementRef } from "@angular/core";
-import { NavController, LoadingController,IonicPage, NavParams  } from "ionic-angular";
+import {
+  NavController,
+  LoadingController,
+  IonicPage,
+  NavParams
+} from "ionic-angular";
 import Highcharts, { isObject } from "highcharts";
 import More from "highcharts/highcharts-more";
-import * as io from "socket.io-client";
 import { HomePage } from "../home/home";
+import { Socket } from "ng-socket-io";
 
 More(Highcharts);
 @IonicPage()
@@ -13,24 +18,32 @@ More(Highcharts);
 })
 export class Home1Page {
   carbMono: number;
+  data: any = 0;
   carbDuo: number;
   @ViewChild("container", { read: ElementRef }) container: ElementRef;
   @ViewChild("container1", { read: ElementRef }) container1: ElementRef;
   constructor(
     public navCtrl: NavController,
-    public loadingCtrl: LoadingController
+    public loadingCtrl: LoadingController,
+    private socket: Socket,
+    public navParams: NavParams
   ) {
-    let loading = this.loadingCtrl.create({
-      spinner: "ios",
-      content: "Please wait..."
-    });
-    loading.present();
+    this.carbMono = navParams.get("mono");
+    this.carbDuo = navParams.get("duo");
+    this.socket.connect();
+    if (this.carbMono == 0) {
+      let loading = this.loadingCtrl.create({
+        spinner: "ios",
+        content: "Please wait..."
+      });
+      loading.present();
 
-    setTimeout(() => {
-      loading.dismiss();
-    }, 5000);
-    this.carbMono = 0;
-    this.carbDuo = 0;
+      setTimeout(() => {
+        loading.dismiss();
+      }, 5000);
+    }
+    //this.carbMono = 0;
+    //this.carbDuo = 0;
   }
 
   ionViewDidLoad() {
@@ -142,14 +155,14 @@ export class Home1Page {
         setInterval(function() {
           var point = chart.series[0].points[0],
             newVal;
-          this.socket = io("http://localhost:3000");
           this.socket.on("home_1", msg => {
             this.carbMono = JSON.parse(msg.payload).CarbonMonoxide;
           });
 
           newVal = this.carbMono;
+          this.data = newVal;
           point.update(newVal);
-        }, 2000);
+        }, 3000);
       }
     );
     Highcharts.chart(
@@ -261,14 +274,13 @@ export class Home1Page {
         setInterval(function() {
           var point = chart.series[0].points[0],
             newVal;
-          this.socket = io("http://localhost:3000");
           this.socket.on("home_1", msg => {
             this.carbDuo = JSON.parse(msg.payload).CarbonDioxide;
           });
 
           newVal = this.carbDuo;
           point.update(newVal);
-        }, 2000);
+        }, 3000);
       }
     );
   }
